@@ -56,6 +56,87 @@ The latest editor changes have been committed to the private source repository.
 
 [View the source repository's latest GitHub Actions run](https://github.com/stitdarulilmitasik-bit/Video_Lyrics_Maker_Android/actions/runs/38909230969)
 
+
+## Tutorial: Cara Menambahkan dan Melakukan Sync Lirik
+
+Ikuti langkah berikut untuk memasukkan lirik lagu, menyelaraskan setiap baris dengan audio, lalu membuat video lirik.
+
+### 1. Masukkan audio lagu
+
+1. Buka **LyricMaker** dan masuk ke halaman editor.
+2. Pilih menu **Audio**.
+3. Pilih file lagu dari penyimpanan perangkat.
+4. Gunakan tombol Play pada pemutar audio untuk memastikan lagu sudah terbaca dan dapat diputar.
+
+### 2. Masukkan file lirik
+
+1. Pilih menu **Lirik (Lyrics)**.
+2. Tekan **Insert Lirik** untuk memilih file lirik.
+3. Pilih file berformat **.TXT**, **.SRC**, atau **.LRC**.
+4. Periksa teks lirik yang tampil. Pastikan urutan baris sesuai dengan lagu.
+
+**Catatan format:**
+- **TXT/SRC**: berisi teks lirik per baris. Waktu kemunculan tiap baris perlu dibuat melalui proses sync.
+- **LRC**: dapat memuat timestamp. Timestamp yang sudah ada akan dibaca oleh aplikasi dan dapat diperiksa atau disesuaikan melalui Timeline.
+
+### 3. Buka Timeline
+
+1. Pilih menu **Timeline**.
+2. Daftar baris lirik akan ditampilkan bersama informasi waktunya.
+3. Baris yang sudah memiliki waktu ditandai **Tersinkron**, sedangkan baris yang belum memiliki waktu ditandai **Menunggu**.
+4. Tekan **Sync** pada bagian header Timeline untuk membuka ruang kerja sinkronisasi.
+
+### 4. Lakukan sync manual dengan tombol REC / SYNC
+
+Cara ini digunakan untuk merekam waktu mulai dan selesai setiap baris lirik mengikuti lagu.
+
+1. Di ruang kerja Sync, tekan **Mulai Sync**. Audio akan mulai diputar jika belum berjalan.
+2. Dengarkan lagu dan perhatikan baris lirik yang sedang dinyanyikan.
+3. Saat penyanyi mulai mengucapkan baris tersebut, **tekan dan tahan tombol REC / SYNC**.
+4. Tahan selama baris lirik dinyanyikan.
+5. Saat baris tersebut selesai, **lepaskan tombol REC / SYNC**.
+6. Aplikasi menyimpan waktu mulai dan selesai baris tersebut, kemudian berpindah otomatis ke baris berikutnya.
+7. Ulangi langkah yang sama sampai semua baris selesai disinkronkan.
+8. Tekan **Selesai Sync** setelah proses selesai.
+
+**Indikator REC:** LED merah menyala ketika tombol REC / SYNC sedang ditekan. Lepaskan tombol pada akhir baris agar aplikasi mencatat batas akhir dan menyiapkan baris berikutnya.
+
+### 5. Kontrol yang tersedia di ruang Sync
+
+- **Play/Pause**: memulai atau menjeda audio.
+- **REC / SYNC**: tekan dan tahan untuk menandai awal hingga akhir baris lirik.
+- **Sebelumnya/Berikutnya**: berpindah di antara baris yang sudah memiliki waktu.
+- **Mulai Sync**: memulai sesi sync baru.
+- **Selesai Sync**: mengakhiri mode sync tanpa menghapus waktu yang sudah direkam.
+- **AI Sync**: menjalankan bantuan sinkronisasi otomatis. Periksa kembali hasilnya karena timing otomatis mungkin masih perlu dikoreksi.
+
+### 6. Periksa dan koreksi timing di Timeline
+
+1. Kembali ke **Timeline** setelah menekan **Selesai Sync**.
+2. Putar lagu dan periksa apakah setiap baris muncul sesuai suara penyanyi.
+3. Pilih baris yang waktunya belum tepat.
+4. Gunakan tindakan **SYNC** pada baris tersebut untuk menetapkan timing pada posisi audio saat ini.
+5. Periksa kembali timestamp dan status setiap baris.
+
+### 7. Simpan project dan ekspor video
+
+1. Simpan pekerjaan menggunakan fitur **Save Project** agar proyek dapat dibuka dan dilanjutkan kembali.
+2. Buka preview untuk memeriksa sinkronisasi, tampilan lirik, warna, font, dan latar belakang.
+3. Atur gaya tampilan lirik sesuai kebutuhan.
+4. Jalankan **Export** untuk membuat video MP4.
+5. Tonton hasil ekspor untuk memastikan timing lirik sesuai dengan audio.
+
+### Tips agar sync lebih akurat
+
+- Gunakan earphone/headphone agar awal dan akhir pengucapan lebih mudah didengar.
+- Lakukan sync di tempat yang tenang.
+- Ikuti suara vokal, bukan hanya ketukan musik.
+- Jangan menekan REC terlalu cepat atau melepasnya terlalu lambat.
+- Periksa ulang bagian jeda, intro, outro, dan baris yang dinyanyikan cepat.
+- Simpan project sebelum melakukan perubahan besar.
+
+> **Penting — perhatikan sebelum memulai ulang:** tombol **Mulai Sync** memulai sesi baru dan menghapus timing lirik yang sudah ada. Jika hanya ingin menghentikan sesi dan mempertahankan hasil sync, gunakan **Selesai Sync**. Fitur **Reset Timing/Reset** di Timeline juga menghapus timing yang tersimpan. Pastikan Anda memang ingin mengulang dari awal sebelum menggunakan Mulai Sync atau Reset.
+
 ## Download
 
 Get the latest Android release from the public Releases page:
